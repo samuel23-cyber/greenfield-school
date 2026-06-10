@@ -71,6 +71,21 @@ nav ul li a:hover {
               url('images/school.jpg.jpg') center/cover no-repeat;
   color: white;
   padding: 140px 20px;
+  @media (max-width: 768px) {
+
+    .hero {
+      padding: 80px 20px;
+    }
+  
+    .hero h1 {
+      font-size: 30px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+    }
+  
+  }
   text-align: center;
 }
 
@@ -118,6 +133,13 @@ section {
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+}
+.feature-box h3 {
+  color: #34495e;
+}
+
+.feature-box {
+  border-top: 4px solid #f1c40f;
 }
 
 .feature-box {
@@ -175,10 +197,19 @@ section {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  nav ul {
+
+  nav .container {
     flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
   }
+
+}
 
   .hero h1 {
     font-size: 32px;
@@ -196,7 +227,7 @@ section {
   .feature-box {
     width: 90%;
   }
-}
+
 .content p {
   transition: 0.3s ease;
 }
@@ -245,4 +276,14 @@ nav ul li a.active {
 }
 .hero .btn {
   margin: 5px;
+}
+@media (max-width: 768px) {
+
+  .btn {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+  }
+
 }
